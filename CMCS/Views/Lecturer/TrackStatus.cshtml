@@ -1,4 +1,8 @@
-﻿<h2>Track Claim Status</h2>
+﻿@{
+    ViewBag.Title = "Track Claim";
+}
+
+<h2>Track Claim Status</h2>
 <table class="table">
     <thead>
         <tr>
@@ -17,7 +21,8 @@
             <td>1002</td>
             <td>2024-09-02</td>
             <td>Approved</td>
-        </tr>
-        <!-- Additional rows can be added similarly -->
+        </tr>    
     </tbody>
 </table>
+
+<a href="@Url.Action("Lecturer", "Home")" class="btn btn-secondary">Back</a>
