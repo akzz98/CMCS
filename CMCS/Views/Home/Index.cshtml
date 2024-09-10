@@ -1,8 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container text-center">
+    <h1>Welcome to the Contract Monthly Claim System (CMCS)</h1>
+    <p>Select one of the options to start:</p>
+
+    <div class="btn-group" role="group" aria-label="User selection">
+        <a href="@Url.Action("Lecturer", "Home")" class="btn btn-primary">Lecturer</a>
+        <a href="@Url.Action("Organization", "Home")" class="btn btn-secondary">Organization</a>
+    </div>
 </div>
+
+<style>
+    .container {
+        margin-top: 50px;
+    }
+    .btn-group {
+        margin-top: 20px;
+    }
+</style>

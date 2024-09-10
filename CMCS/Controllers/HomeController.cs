@@ -18,7 +18,12 @@ namespace CMCS.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public ActionResult Lecturer()
+        {
+            return View();
+        }
+
+        public ActionResult Organization()
         {
             return View();
         }
