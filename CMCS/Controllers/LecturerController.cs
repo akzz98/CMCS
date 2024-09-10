@@ -2,9 +2,13 @@
 
 namespace CMCS.Controllers
 {
-    public class LectureController : Controller
+    public class LecturerController : Controller
     {
         public IActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult SubmitClaim()
         {
             return View();
         }
@@ -14,7 +18,12 @@ namespace CMCS.Controllers
             return View();
         }
 
-        public ActionResult TrackClaim()
+        public ActionResult TrackStatus()
+        {
+            return View();
+        }
+
+        public ActionResult VerifyClaims()
         {
             return View();
         }
