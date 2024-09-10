@@ -4,11 +4,28 @@
 
 <div class="container text-center">
     <h1>Welcome to the Contract Monthly Claim System (CMCS)</h1>
-    <p>Select one of the options to start:</p>
+    <h3>Select one of the options to start:</h3>
 
-    <div class="btn-group" role="group" aria-label="User selection">
-        <a href="@Url.Action("Lecturer", "Home")" class="btn btn-primary">Lecturer</a>
-        <a href="@Url.Action("Organization", "Home")" class="btn btn-secondary">Organization</a>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lecturer</h5>
+                    <p class="card-text">Submit and manage your claims.</p>
+                    <a href="@Url.Action("Lecturer", "Home")" class="btn btn-primary">Go to Lecturer</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Organization</h5>
+                    <p class="card-text">Manage lecturers' claims and approvals.</p>
+                    <a href="@Url.Action("Organization", "Home")" class="btn btn-primary">Go to Organization</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -16,7 +33,12 @@
     .container {
         margin-top: 50px;
     }
-    .btn-group {
+
+    .row {
         margin-top: 20px;
+    }
+
+    .card {
+        margin: 10px;
     }
 </style>
